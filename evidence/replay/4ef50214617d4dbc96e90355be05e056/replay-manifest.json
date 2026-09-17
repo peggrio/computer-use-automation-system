@@ -1,0 +1,20 @@
+{
+  "format": "replay_v1",
+  "run_id": "4ef50214617d4dbc96e90355be05e056",
+  "capability": {
+    "id": "lookup_transaction",
+    "version": "0.2.0",
+    "sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e"
+  },
+  "profile": {
+    "id": "parabank_local_browser",
+    "version": "0.2.0",
+    "sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7"
+  },
+  "model_calls": 0,
+  "inputs_persisted": false,
+  "limits": {
+    "max_duration_ms": 120000,
+    "max_actions": 40
+  }
+}

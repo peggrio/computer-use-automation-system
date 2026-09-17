@@ -1,0 +1,9 @@
+{
+  "format": "evidence_v1",
+  "run_id": "dc6c3062373e4278aa3a6d0fb9f545e7",
+  "capability_sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e",
+  "profile_sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7",
+  "policy_sha256": "972ff3081dd2dfa119b0a5adcb29b3c361f3c1d9c9d43bc6fcefe42f901525c4",
+  "source": "deterministic_replay",
+  "contains_model_discovery": false
+}

@@ -1,0 +1,15 @@
+{
+  "request_sha256": "00fbb4839d75875311c76824131cdb0200a81fa60953db37ff304c7aed68fad7",
+  "decision": {
+    "operation": "click",
+    "target": "result_transaction",
+    "input": null,
+    "reason": "navigate"
+  },
+  "receipt": {
+    "response_id": "resp_03b63442323620b8016aab67ecad8887d08e30d623b194a418",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 942,
+    "output_tokens": 85
+  }
+}

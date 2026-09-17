@@ -1,0 +1,12 @@
+{
+  "status": "failed",
+  "code": "invalid_model_decision",
+  "format": "discovery_result_v1",
+  "run_id": "0e6b0be8d024418ab0d2763ab10928b4",
+  "contains_model_discovery": true,
+  "model_calls_completed": 4,
+  "total_tokens": 3762,
+  "elapsed_seconds": 13.904,
+  "output_fields": [],
+  "promotion_status": "not_generated"
+}

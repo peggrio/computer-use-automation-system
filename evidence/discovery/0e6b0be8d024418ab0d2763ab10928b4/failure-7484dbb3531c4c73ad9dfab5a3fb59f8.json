@@ -1,0 +1,1079 @@
+{
+  "format": "redacted_dom_v1",
+  "root": {
+    "tag": "body",
+    "visible": true,
+    "children": [
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "p",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "b",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h2",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "ul",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "div",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "h1",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "form",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "b",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "[REDACTED]"
+                                  },
+                                  {
+                                    "tag": "select",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": [
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "option",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "visible": true,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "hr",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "b",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "[REDACTED]"
+                                  },
+                                  {
+                                    "tag": "input",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "visible": true,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "br",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "button",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "hr",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "b",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "[REDACTED]"
+                                  },
+                                  {
+                                    "tag": "input",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": []
+                                  },
+                                  {
+                                    "text": "[REDACTED]"
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "visible": true,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "br",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "button",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "hr",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "p",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "b",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "div",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      },
+                                      {
+                                        "tag": "input",
+                                        "visible": true,
+                                        "enabled": true,
+                                        "value": "[REDACTED]",
+                                        "children": []
+                                      },
+                                      {
+                                        "text": "[REDACTED]"
+                                      },
+                                      {
+                                        "tag": "input",
+                                        "visible": true,
+                                        "enabled": true,
+                                        "value": "[REDACTED]",
+                                        "children": []
+                                      },
+                                      {
+                                        "text": "[REDACTED]"
+                                      },
+                                      {
+                                        "tag": "span",
+                                        "visible": true,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "br",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "button",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "hr",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "b",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "text": "[REDACTED]"
+                                  },
+                                  {
+                                    "tag": "input",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": []
+                                  },
+                                  {
+                                    "tag": "span",
+                                    "visible": true,
+                                    "children": []
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "br",
+                                "visible": true,
+                                "children": []
+                              },
+                              {
+                                "tag": "div",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "button",
+                                    "visible": true,
+                                    "enabled": true,
+                                    "value": "[REDACTED]",
+                                    "children": [
+                                      {
+                                        "text": "[REDACTED]"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "visible": false,
+                        "children": [
+                          {
+                            "tag": "h1",
+                            "visible": false,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "table",
+                            "visible": false,
+                            "children": [
+                              {
+                                "tag": "thead",
+                                "visible": false,
+                                "children": [
+                                  {
+                                    "tag": "tr",
+                                    "visible": false,
+                                    "children": [
+                                      {
+                                        "tag": "th",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "th",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "th",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "th",
+                                        "visible": false,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "tbody",
+                                "visible": false,
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "visible": false,
+                        "children": [
+                          {
+                            "tag": "h1",
+                            "visible": false,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "visible": false,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

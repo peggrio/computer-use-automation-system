@@ -1,0 +1,7 @@
+{
+  "format": "replay_event_v1",
+  "event": "resume_revalidated",
+  "step_id": "step_000",
+  "phase": "action",
+  "reason": "read_only_restart_from_entry"
+}

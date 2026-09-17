@@ -1,0 +1,35 @@
+{
+  "kind": "replay_summary",
+  "schema_version": "1.0.0",
+  "run_id": "f6b2346fddb04950971669e74bb96bcb",
+  "capability": {
+    "id": "lookup_transaction",
+    "version": "0.2.0",
+    "sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e"
+  },
+  "profile": {
+    "id": "parabank_local_browser",
+    "version": "0.2.0",
+    "sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7"
+  },
+  "evidence_refs": [
+    "failure-b668fcb4312a46ef99a5faea04a0774a.json"
+  ],
+  "status": "failed",
+  "error": {
+    "code": "policy_denied",
+    "step_id": "step_001",
+    "expected": "Validated contract and verified checkpoints for the current phase.",
+    "observed": "Execution stopped during action; values redacted.",
+    "evidence_refs": [
+      "failure-b668fcb4312a46ef99a5faea04a0774a.json"
+    ]
+  },
+  "format": "replay_summary_v1",
+  "classification": "hard_failure",
+  "output_fields": [],
+  "actions_attempted": 2,
+  "model_calls": 0,
+  "elapsed_seconds": 0.326,
+  "live_session_retained": false
+}

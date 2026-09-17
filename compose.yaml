@@ -1,0 +1,8 @@
+name: computer-use-automation-system
+
+services:
+  parabank:
+    # Pin the multi-platform image for repeatable demo runs.
+    image: parasoft/parabank@sha256:747453a0c00b52ed36c7c55aa842a6e9e4a761f70ad577ec07b1f6cbee77e0e5
+    ports:
+      - "127.0.0.1:8080:8080"

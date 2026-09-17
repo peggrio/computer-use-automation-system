@@ -1,0 +1,15 @@
+{
+  "request_sha256": "e4be7f2b55c3b6896d4ea8df12d50a418c43dd0f07f39e00663835fe0b45f013",
+  "decision": {
+    "operation": "finish",
+    "target": null,
+    "input": null,
+    "reason": "verify_completion"
+  },
+  "receipt": {
+    "response_id": "resp_049ebe55905e3c14016aab67f0feec87d0b6c498266f3ba127",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 966,
+    "output_tokens": 146
+  }
+}

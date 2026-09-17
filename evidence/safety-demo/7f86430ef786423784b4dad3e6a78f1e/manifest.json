@@ -1,0 +1,9 @@
+{
+  "format": "evidence_v1",
+  "run_id": "7f86430ef786423784b4dad3e6a78f1e",
+  "capability_sha256": "3a6ac9b4cd0d87853bdb12b861c56b555804d01ac754eb4e2a23495d154c2d69",
+  "profile_sha256": "998600ac5988600894311eecb9d9c49094416d64d8294d4e0247f187d105fc59",
+  "policy_sha256": "972ff3081dd2dfa119b0a5adcb29b3c361f3c1d9c9d43bc6fcefe42f901525c4",
+  "source": "adapter_execution",
+  "contains_model_discovery": false
+}

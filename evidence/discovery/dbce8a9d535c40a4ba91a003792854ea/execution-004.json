@@ -1,0 +1,77 @@
+{
+  "model_response": "model-response-004.json",
+  "action": {
+    "type": "click",
+    "target": "search_by_id"
+  },
+  "before": {
+    "ready_views": {
+      "overview": false,
+      "activity": false,
+      "search": true,
+      "results": false,
+      "details": false
+    },
+    "matching_controls": {
+      "account_link": "unknown",
+      "account_number": "unknown",
+      "account_transaction": "unknown",
+      "find_transactions": "one",
+      "account_select": "one",
+      "transaction_input": "one",
+      "search_by_id": "one",
+      "result_transaction": "unknown",
+      "detail_id": "unknown",
+      "detail_date": "unknown",
+      "detail_description": "unknown",
+      "detail_type": "unknown",
+      "detail_amount": "unknown"
+    },
+    "input_matches": {
+      "account_matches": false,
+      "transaction_matches": false,
+      "search_account_matches": true,
+      "search_transaction_matches": true
+    },
+    "membership_verified": true,
+    "applied_inputs": [
+      "account_id",
+      "transaction_id"
+    ]
+  },
+  "after": {
+    "ready_views": {
+      "overview": false,
+      "activity": false,
+      "search": false,
+      "results": true,
+      "details": false
+    },
+    "matching_controls": {
+      "account_link": "unknown",
+      "account_number": "unknown",
+      "account_transaction": "unknown",
+      "find_transactions": "one",
+      "account_select": "unknown",
+      "transaction_input": "unknown",
+      "search_by_id": "unknown",
+      "result_transaction": "one",
+      "detail_id": "unknown",
+      "detail_date": "unknown",
+      "detail_description": "unknown",
+      "detail_type": "unknown",
+      "detail_amount": "unknown"
+    },
+    "input_matches": {
+      "account_matches": false,
+      "transaction_matches": false,
+      "search_account_matches": false,
+      "search_transaction_matches": false
+    },
+    "membership_verified": true,
+    "applied_inputs": [
+      "account_id",
+      "transaction_id"
+    ]
+  }
+}

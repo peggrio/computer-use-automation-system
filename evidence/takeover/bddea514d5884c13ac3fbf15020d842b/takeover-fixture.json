@@ -1,0 +1,5 @@
+{
+  "source": "test_harness",
+  "scenario": "ui_logout_then_simulated_operator_login_and_explicit_return",
+  "actual_human_participated": false
+}

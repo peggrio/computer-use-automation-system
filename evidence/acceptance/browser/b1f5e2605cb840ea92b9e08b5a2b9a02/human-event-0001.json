@@ -1,0 +1,12 @@
+{
+  "format": "human_event_v1",
+  "source": "test_harness",
+  "event": "takeover_started",
+  "timestamp": "2026-09-17T07:55:44.654372+00:00",
+  "session_id": "548bcf234b78480da8d77b961dfa156b",
+  "control_epoch": 1,
+  "request_id": "f39417c6f91849a092d4258f9818da8c",
+  "failed_step": "step_000",
+  "code": "session_expired",
+  "restart_step": "step_000"
+}

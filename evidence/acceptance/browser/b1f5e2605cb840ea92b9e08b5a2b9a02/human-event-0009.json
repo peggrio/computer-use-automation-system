@@ -1,0 +1,9 @@
+{
+  "format": "human_event_v1",
+  "source": "test_harness",
+  "event": "return_requested",
+  "timestamp": "2026-09-17T07:55:44.783238+00:00",
+  "session_id": "548bcf234b78480da8d77b961dfa156b",
+  "control_epoch": 1,
+  "request_id": "f39417c6f91849a092d4258f9818da8c"
+}

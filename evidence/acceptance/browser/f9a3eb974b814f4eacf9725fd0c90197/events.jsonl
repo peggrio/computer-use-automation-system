@@ -1,0 +1,33 @@
+{"sequence": 1, "timestamp": "2026-09-17T07:55:35.810652+00:00", "event": "run_started"}
+{"sequence": 2, "timestamp": "2026-09-17T07:55:36.149030+00:00", "event": "operation_started", "operation": "login", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 3, "timestamp": "2026-09-17T07:55:36.418309+00:00", "event": "operation_completed", "operation": "login", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 4, "timestamp": "2026-09-17T07:55:36.441969+00:00", "event": "operation_started", "operation": "perform", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 5, "timestamp": "2026-09-17T07:55:36.451866+00:00", "event": "operation_completed", "operation": "perform", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 6, "timestamp": "2026-09-17T07:55:36.452476+00:00", "event": "operation_started", "operation": "evaluate", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 7, "timestamp": "2026-09-17T07:55:36.458933+00:00", "event": "operation_completed", "operation": "evaluate", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 8, "timestamp": "2026-09-17T07:55:36.459461+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 9, "timestamp": "2026-09-17T07:55:36.497208+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 10, "timestamp": "2026-09-17T07:55:36.498004+00:00", "event": "operation_started", "operation": "evaluate", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 11, "timestamp": "2026-09-17T07:55:36.503625+00:00", "event": "operation_completed", "operation": "evaluate", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 12, "timestamp": "2026-09-17T07:55:36.503723+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 13, "timestamp": "2026-09-17T07:55:36.538677+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 14, "timestamp": "2026-09-17T07:55:36.539462+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 15, "timestamp": "2026-09-17T07:55:36.558398+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 16, "timestamp": "2026-09-17T07:55:36.558586+00:00", "event": "operation_started", "operation": "resolve", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 17, "timestamp": "2026-09-17T07:55:36.598810+00:00", "event": "operation_completed", "operation": "resolve", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 18, "timestamp": "2026-09-17T07:55:36.599270+00:00", "event": "operation_started", "operation": "perform", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 19, "timestamp": "2026-09-17T07:55:36.677403+00:00", "event": "operation_started", "operation": "click", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 20, "timestamp": "2026-09-17T07:55:36.736402+00:00", "event": "operation_completed", "operation": "perform", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 21, "timestamp": "2026-09-17T07:55:36.737449+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 22, "timestamp": "2026-09-17T07:55:36.761878+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 23, "timestamp": "2026-09-17T07:55:36.813583+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 24, "timestamp": "2026-09-17T07:55:36.825026+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 25, "timestamp": "2026-09-17T07:55:36.827023+00:00", "event": "operation_started", "operation": "perform", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 26, "timestamp": "2026-09-17T07:55:36.840292+00:00", "event": "operation_completed", "operation": "perform", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 27, "timestamp": "2026-09-17T07:55:36.840859+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 28, "timestamp": "2026-09-17T07:55:36.848854+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 29, "timestamp": "2026-09-17T07:55:36.848949+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_number", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 30, "timestamp": "2026-09-17T07:55:36.857146+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_number", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 31, "timestamp": "2026-09-17T07:55:36.857666+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 32, "timestamp": "2026-09-17T07:55:36.868337+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 33, "timestamp": "2026-09-17T07:55:36.899389+00:00", "event": "run_finished", "reason": "finished"}

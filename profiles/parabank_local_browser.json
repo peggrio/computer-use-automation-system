@@ -1,0 +1,268 @@
+{
+  "kind": "surface_profile",
+  "schema_version": "1.0.0",
+  "id": "parabank_local_browser",
+  "version": "0.1.0",
+  "capability": {
+    "id": "lookup_transaction",
+    "version": "0.1.0"
+  },
+  "application": {
+    "family": "parabank",
+    "release": "sha256:747453a0c00b52ed36c7c55aa842a6e9e4a761f70ad577ec07b1f6cbee77e0e5"
+  },
+  "adapter": {
+    "name": "playwright_browser",
+    "contract_version": "1.0.0"
+  },
+  "readiness_contract": "parabank_browser_v1",
+  "bindings": {
+    "overview": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#overviewAccountsApp"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "account_link": {
+      "scope": "overview",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#accountTable tbody a"
+        }
+      ],
+      "filters": [
+        {
+          "type": "link_query_equals",
+          "parameter": "id",
+          "value": {
+            "input": "account_id"
+          }
+        }
+      ],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "activity": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#rightPanel"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "account_number": {
+      "scope": "activity",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#accountDetails #accountId"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "account_transaction": {
+      "scope": "activity",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#transactionTable tbody a"
+        }
+      ],
+      "filters": [
+        {
+          "type": "link_query_equals",
+          "parameter": "id",
+          "value": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "find_transactions": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "role",
+          "role": "link",
+          "name": {
+            "literal": "Find Transactions"
+          }
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "search": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#formContainer"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "account_select": {
+      "scope": "search",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "select#accountId"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "transaction_input": {
+      "scope": "search",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "input#transactionId"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "search_by_id": {
+      "scope": "search",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "button#findById"
+        }
+      ],
+      "filters": [],
+      "rationale": "Four buttons share the same accessible name; the existing ID disambiguates the ID-search action."
+    },
+    "results": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#resultContainer"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "result_transaction": {
+      "scope": "results",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#transactionBody a"
+        }
+      ],
+      "filters": [
+        {
+          "type": "link_query_equals",
+          "parameter": "id",
+          "value": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "details": {
+      "scope": null,
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "#rightPanel"
+        }
+      ],
+      "filters": [],
+      "rationale": "Existing application markup; no test IDs are added."
+    },
+    "detail_id": {
+      "scope": "details",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "tr:has(td:first-child > b:text-is(\"Transaction ID:\")) > td:nth-child(2)"
+        }
+      ],
+      "filters": [],
+      "rationale": "Find the value by its row label in a legacy table, not a global row index."
+    },
+    "detail_date": {
+      "scope": "details",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "tr:has(td:first-child > b:text-is(\"Date:\")) > td:nth-child(2)"
+        }
+      ],
+      "filters": [],
+      "rationale": "Find the value by its row label in a legacy table, not a global row index."
+    },
+    "detail_description": {
+      "scope": "details",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "tr:has(td:first-child > b:text-is(\"Description:\")) > td:nth-child(2)"
+        }
+      ],
+      "filters": [],
+      "rationale": "Find the value by its row label in a legacy table, not a global row index."
+    },
+    "detail_type": {
+      "scope": "details",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "tr:has(td:first-child > b:text-is(\"Type:\")) > td:nth-child(2)"
+        }
+      ],
+      "filters": [],
+      "rationale": "Find the value by its row label in a legacy table, not a global row index."
+    },
+    "detail_amount": {
+      "scope": "details",
+      "candidates": [
+        {
+          "strategy": "css",
+          "selector": "tr:has(td:first-child > b:text-is(\"Amount:\")) > td:nth-child(2)"
+        }
+      ],
+      "filters": [],
+      "rationale": "Find the value by its row label in a legacy table, not a global row index."
+    }
+  },
+  "readiness": {
+    "overview": {
+      "rule": "overview_complete",
+      "description": "Current document/request completion plus rendered view checks; see automation/parabank.py."
+    },
+    "activity": {
+      "rule": "activity_complete",
+      "description": "Current document/request completion plus rendered view checks; see automation/parabank.py."
+    },
+    "search": {
+      "rule": "search_complete",
+      "description": "Current document/request completion plus rendered view checks; see automation/parabank.py."
+    },
+    "results": {
+      "rule": "results_complete",
+      "description": "Current document/request completion plus rendered view checks; see automation/parabank.py."
+    },
+    "details": {
+      "rule": "details_complete",
+      "description": "Current document/request completion plus rendered view checks; see automation/parabank.py."
+    }
+  }
+}

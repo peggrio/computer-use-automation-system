@@ -1,0 +1,26 @@
+{
+  "kind": "replay_summary",
+  "schema_version": "1.0.0",
+  "run_id": "ec795b04f84f4aec88aa3bcb43715eeb",
+  "capability": {
+    "id": "lookup_transaction",
+    "version": "0.2.0",
+    "sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e"
+  },
+  "profile": {
+    "id": "parabank_local_browser",
+    "version": "0.2.0",
+    "sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7"
+  },
+  "evidence_refs": [],
+  "status": "business_outcome",
+  "code": "transaction_not_found_in_account",
+  "step_id": "step_002",
+  "format": "replay_summary_v1",
+  "classification": "business_outcome",
+  "output_fields": [],
+  "actions_attempted": 3,
+  "model_calls": 0,
+  "elapsed_seconds": 0.494,
+  "live_session_retained": false
+}

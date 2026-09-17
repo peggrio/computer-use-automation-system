@@ -1,0 +1,9 @@
+{
+  "format": "human_event_v1",
+  "source": "test_harness",
+  "event": "navigation",
+  "timestamp": "2026-09-17T07:55:44.717549+00:00",
+  "session_id": "548bcf234b78480da8d77b961dfa156b",
+  "control_epoch": 1,
+  "destination": "approved_document"
+}

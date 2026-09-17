@@ -1,0 +1,15 @@
+{
+  "request_sha256": "a0156b2faf954dfe3772507ae14504187e3625fa8f18bd2a45e6db7aa7d2c24a",
+  "decision": {
+    "operation": "fill",
+    "target": "transaction_input",
+    "input": "transaction_id",
+    "reason": "apply_input"
+  },
+  "receipt": {
+    "response_id": "resp_046f67317a9238a7016aab67302f1887d09c9c9fb715724dc9",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 885,
+    "output_tokens": 97
+  }
+}

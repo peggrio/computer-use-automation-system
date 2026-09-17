@@ -1,0 +1,143 @@
+{
+  "version": "1.0.0",
+  "id": "parabank_read_only",
+  "allowed_origins": [
+    "http://127.0.0.1:8080",
+    "http://localhost:8080"
+  ],
+  "routes": [
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/index\\.htm",
+      "query": {"ConnType": "JDBC"},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/overview\\.htm",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/findtrans\\.htm",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/logout\\.htm",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/activity\\.htm",
+      "query": {
+        "id": "[0-9]+"
+      },
+      "required_query": [
+        "id"
+      ]
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/transaction\\.htm",
+      "query": {
+        "id": "[0-9]+"
+      },
+      "required_query": [
+        "id"
+      ]
+    },
+    {
+      "method": "POST",
+      "path_pattern": "/parabank/login\\.htm",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/services_proxy/bank/(customers/[0-9]+/accounts|accounts/[0-9]+|accounts/[0-9]+/transactions/month/All/type/All|transactions/[0-9]+)",
+      "query": {
+        "timeout": "30000",
+        "_": "[0-9]+"
+      },
+      "required_query": []
+    },
+    {
+      "method": "GET",
+      "path_pattern": "/parabank/(template\\.css|style\\.css|images/[a-zA-Z0-9_.-]+\\.(gif|png|jpg|ico)|webjars/jquery/[0-9.]+/jquery(\\.min)?\\.js)",
+      "query": {},
+      "required_query": []
+    }
+  ],
+  "actions": {
+    "account_link": {
+      "action": "click",
+      "effect": "read_only",
+      "tag": "A",
+      "path": "/parabank/activity.htm",
+      "query_input": "account_id"
+    },
+    "find_transactions": {
+      "action": "click",
+      "effect": "read_only",
+      "tag": "A",
+      "path": "/parabank/findtrans.htm"
+    },
+    "result_transaction": {
+      "action": "click",
+      "effect": "read_only",
+      "tag": "A",
+      "path": "/parabank/transaction.htm",
+      "query_input": "transaction_id"
+    },
+    "search_by_id": {
+      "action": "click",
+      "effect": "read_only",
+      "tag": "BUTTON",
+      "id": "findById",
+      "view": "/parabank/findtrans.htm"
+    },
+    "transaction_input": {
+      "action": "fill",
+      "effect": "read_only",
+      "tag": "INPUT",
+      "id": "transactionId",
+      "view": "/parabank/findtrans.htm",
+      "input": "transaction_id"
+    },
+    "account_select": {
+      "action": "select",
+      "effect": "read_only",
+      "tag": "SELECT",
+      "id": "accountId",
+      "view": "/parabank/findtrans.htm",
+      "input": "account_id"
+    }
+  },
+  "allowed_effects": [
+    "read_only"
+  ],
+  "risky_action": "block",
+  "allowed_operations": [
+    "observe",
+    "read",
+    "evaluate",
+    "resolve",
+    "wait",
+    "extract",
+    "click",
+    "fill",
+    "select",
+    "login"
+  ],
+  "max_actions": 100
+}

@@ -1,0 +1,43 @@
+{
+  "kind": "replay_summary",
+  "schema_version": "1.0.0",
+  "run_id": "bddea514d5884c13ac3fbf15020d842b",
+  "capability": {
+    "id": "lookup_transaction",
+    "version": "0.2.0",
+    "sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e"
+  },
+  "profile": {
+    "id": "parabank_local_browser",
+    "version": "0.2.0",
+    "sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7"
+  },
+  "evidence_refs": [
+    "failure-a83729489aa54932997e398459cdaabb.json"
+  ],
+  "status": "paused",
+  "error": {
+    "code": "session_expired",
+    "step_id": "step_000",
+    "expected": "Validated contract and verified checkpoints for the current phase.",
+    "observed": "Execution stopped during action; values redacted.",
+    "evidence_refs": [
+      "failure-a83729489aa54932997e398459cdaabb.json"
+    ]
+  },
+  "intervention": {
+    "request_id": "44ce2f3c450b4d049942120333aaa1f4",
+    "session_id": "7ebc22038c0244bca23b1eb0c0fcee6f",
+    "owner": "human",
+    "control_epoch": 1,
+    "resume_step_id": "step_000",
+    "resume_mode": "revalidate"
+  },
+  "format": "replay_summary_v1",
+  "classification": "recoverable_condition",
+  "output_fields": [],
+  "actions_attempted": 1,
+  "model_calls": 0,
+  "elapsed_seconds": 0.067,
+  "live_session_retained": true
+}

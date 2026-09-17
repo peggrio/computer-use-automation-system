@@ -1,0 +1,6 @@
+{
+  "format": "replay_event_v1",
+  "event": "step_started",
+  "step_id": "step_005",
+  "phase": "requires"
+}

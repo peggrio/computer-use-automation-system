@@ -1,0 +1,15 @@
+{
+  "request_sha256": "590d88d6ec8193ed4759ea17cec697d8fd77c30e7cf5274a7ade3adf5eebce93",
+  "decision": {
+    "operation": "select",
+    "target": "account_select",
+    "input": "account_id",
+    "reason": "apply_input"
+  },
+  "receipt": {
+    "response_id": "resp_0ae0060164ab21fd016aab67e50b2c87d082e800e5e225b935",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 855,
+    "output_tokens": 118
+  }
+}

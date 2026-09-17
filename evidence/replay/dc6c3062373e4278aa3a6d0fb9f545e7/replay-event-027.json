@@ -1,0 +1,8 @@
+{
+  "format": "replay_event_v1",
+  "event": "action_started",
+  "step_id": "step_004",
+  "phase": "action",
+  "operation": "select",
+  "attempt": 1
+}

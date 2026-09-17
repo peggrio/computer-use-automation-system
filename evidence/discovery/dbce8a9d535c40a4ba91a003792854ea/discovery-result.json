@@ -1,0 +1,24 @@
+{
+  "status": "succeeded",
+  "capability": "capability.json",
+  "profile": "surface-profile.json",
+  "capability_sha256": "f072ff703a27cd922132073e8dea7a08858042d0c1dba5780487dfc2887fcf3e",
+  "profile_sha256": "313370fc97687ac35cf0cf03351cbd499089bcfb456c0f9d0bff543b1b649bb7",
+  "format": "discovery_result_v1",
+  "run_id": "dbce8a9d535c40a4ba91a003792854ea",
+  "contains_model_discovery": true,
+  "model_calls_attempted": 7,
+  "model_calls_completed": 7,
+  "total_tokens": 6894,
+  "elapsed_seconds": 20.941,
+  "output_fields": [
+    "account_id",
+    "amount",
+    "currency",
+    "date",
+    "description",
+    "transaction_id",
+    "type"
+  ],
+  "promotion_status": "pending_review"
+}

@@ -1,0 +1,76 @@
+{
+  "model_response": "model-response-002.json",
+  "action": {
+    "type": "select",
+    "target": "account_select",
+    "value": {
+      "input": "account_id"
+    }
+  },
+  "before": {
+    "ready_views": {
+      "overview": false,
+      "activity": false,
+      "search": true,
+      "results": false,
+      "details": false
+    },
+    "matching_controls": {
+      "account_link": "unknown",
+      "account_number": "unknown",
+      "account_transaction": "unknown",
+      "find_transactions": "one",
+      "account_select": "one",
+      "transaction_input": "one",
+      "search_by_id": "one",
+      "result_transaction": "unknown",
+      "detail_id": "unknown",
+      "detail_date": "unknown",
+      "detail_description": "unknown",
+      "detail_type": "unknown",
+      "detail_amount": "unknown"
+    },
+    "input_matches": {
+      "account_matches": false,
+      "transaction_matches": false,
+      "search_account_matches": true,
+      "search_transaction_matches": false
+    },
+    "membership_verified": true,
+    "applied_inputs": []
+  },
+  "after": {
+    "ready_views": {
+      "overview": false,
+      "activity": false,
+      "search": true,
+      "results": false,
+      "details": false
+    },
+    "matching_controls": {
+      "account_link": "unknown",
+      "account_number": "unknown",
+      "account_transaction": "unknown",
+      "find_transactions": "one",
+      "account_select": "one",
+      "transaction_input": "one",
+      "search_by_id": "one",
+      "result_transaction": "unknown",
+      "detail_id": "unknown",
+      "detail_date": "unknown",
+      "detail_description": "unknown",
+      "detail_type": "unknown",
+      "detail_amount": "unknown"
+    },
+    "input_matches": {
+      "account_matches": false,
+      "transaction_matches": false,
+      "search_account_matches": true,
+      "search_transaction_matches": false
+    },
+    "membership_verified": true,
+    "applied_inputs": [
+      "account_id"
+    ]
+  }
+}

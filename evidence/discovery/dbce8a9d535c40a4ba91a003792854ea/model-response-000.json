@@ -1,0 +1,15 @@
+{
+  "request_sha256": "eff69399866547d2302f81eb39df6795b084fd5157309c8c1642755b277069e2",
+  "decision": {
+    "operation": "click",
+    "target": "account_link",
+    "input": null,
+    "reason": "inspect_account"
+  },
+  "receipt": {
+    "response_id": "resp_0bcf6bdf96e3c67f016aab67dffc6087d0b7034b0f2268f2e8",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 806,
+    "output_tokens": 54
+  }
+}

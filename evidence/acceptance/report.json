@@ -1,0 +1,123 @@
+{
+  "format": "complete_flow_acceptance_v1",
+  "passed": true,
+  "new_model_calls": 0,
+  "actual_human_participated": false,
+  "checks": {
+    "replay_uses_discovered_artifact": true,
+    "regression_suite": true,
+    "isolated_browser_runs": true,
+    "evidence_redacted": true
+  },
+  "recorded_discovery": {
+    "status": "verified",
+    "model_calls": 7,
+    "total_tokens": 6894,
+    "recorded_ui_actions": 6,
+    "compiled_steps": 9
+  },
+  "discovery_mode": "verify_previous_real_run; regression tests use model doubles",
+  "regression_tests": 103,
+  "regression_failures": [],
+  "browser_results": [
+    {
+      "scenario": "different_transaction",
+      "status": "succeeded",
+      "classification": "success",
+      "passed": true,
+      "evidence_directory": "browser/37b51bf724ea4ce69368fecdec423ce5"
+    },
+    {
+      "scenario": "different_account_and_transaction",
+      "status": "succeeded",
+      "classification": "success",
+      "passed": true,
+      "evidence_directory": "browser/6b25de15a62c4e95914512e874daa8ed"
+    },
+    {
+      "scenario": "transaction_belongs_elsewhere",
+      "status": "business_outcome",
+      "classification": "business_outcome",
+      "passed": true,
+      "evidence_directory": "browser/668fa39d4ff94a3084c8d1339081c86f"
+    },
+    {
+      "scenario": "different_existing_account",
+      "status": "business_outcome",
+      "classification": "business_outcome",
+      "passed": true,
+      "evidence_directory": "browser/f9a3eb974b814f4eacf9725fd0c90197"
+    },
+    {
+      "scenario": "account_absent",
+      "status": "business_outcome",
+      "classification": "business_outcome",
+      "passed": true,
+      "evidence_directory": "browser/bf56d501668943178053dc4191c606b2"
+    },
+    {
+      "scenario": "transaction_absent",
+      "status": "business_outcome",
+      "classification": "business_outcome",
+      "passed": true,
+      "evidence_directory": "browser/fe53416846db4e2aa9b4e6cb03508063"
+    },
+    {
+      "scenario": "slow_load",
+      "status": "succeeded",
+      "classification": "success",
+      "passed": true,
+      "evidence_directory": "browser/3f21dcb49bf54994aa8d68c8a152cfc8"
+    },
+    {
+      "scenario": "session_expired",
+      "status": "failed",
+      "classification": "recoverable_condition",
+      "passed": true,
+      "evidence_directory": "browser/d728f837c3094130bee14b97a79ee7ff"
+    },
+    {
+      "scenario": "load_failed",
+      "status": "failed",
+      "classification": "hard_failure",
+      "passed": true,
+      "evidence_directory": "browser/889e0bc94b20410e891e11c649e918fc"
+    },
+    {
+      "scenario": "policy_block",
+      "status": "failed",
+      "classification": "hard_failure",
+      "passed": true,
+      "evidence_directory": "browser/f6b2346fddb04950971669e74bb96bcb"
+    },
+    {
+      "passed": true,
+      "evidence_directory": "browser/b1f5e2605cb840ea92b9e08b5a2b9a02",
+      "actual_human_participated": false,
+      "model_calls": 0
+    },
+    {
+      "guard_passed": true,
+      "blocked_attempts": {
+        "model_imports": 0,
+        "external_connections": 0
+      },
+      "model_calls": 0
+    }
+  ],
+  "evidence_scan": {
+    "discovery": {
+      "passed": true,
+      "files_scanned": 26,
+      "violations": 0,
+      "matched_values_reported": false
+    },
+    "browser": {
+      "passed": true,
+      "files_scanned": 386,
+      "violations": 0,
+      "matched_values_reported": false
+    }
+  },
+  "export_note": "Copied from the passing local acceptance run; only report evidence paths were made relative. Browser logs are unchanged."
+}

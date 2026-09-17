@@ -1,0 +1,7 @@
+{
+  "format": "replay_event_v1",
+  "event": "checkpoints_passed",
+  "step_id": "step_006",
+  "phase": "requires",
+  "count": 4
+}

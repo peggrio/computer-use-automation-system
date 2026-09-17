@@ -1,0 +1,15 @@
+{
+  "format": "replay_acceptance_v1",
+  "fixture": "different_transaction",
+  "source": "test_harness",
+  "checks": {
+    "status_matches": true,
+    "code_matches": true,
+    "account_matches": true,
+    "transaction_matches": true,
+    "amount_matches": true,
+    "type_matches": true
+  },
+  "passed": true,
+  "model_calls": 0
+}

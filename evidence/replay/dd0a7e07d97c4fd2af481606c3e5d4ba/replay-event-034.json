@@ -1,0 +1,8 @@
+{
+  "format": "replay_event_v1",
+  "event": "action_completed",
+  "step_id": "step_005",
+  "phase": "action",
+  "operation": "fill",
+  "attempt": 1
+}

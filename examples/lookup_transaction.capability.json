@@ -1,0 +1,512 @@
+{
+  "kind": "capability",
+  "schema_version": "1.0.0",
+  "id": "lookup_transaction",
+  "version": "0.1.0",
+  "name": "Look up a transaction in an account",
+  "description": "Read-only ParaBank UI workflow with explicit account-membership verification. Design example, not a discovery recording.",
+  "provenance": {
+    "source": "design_example",
+    "evidence_run_id": null
+  },
+  "application": {
+    "family": "parabank",
+    "compatibility": "Pinned sandbox image; validate profile against its exact release before execution."
+  },
+  "requires_session": "authenticated",
+  "effect": "read_only",
+  "inputs": {
+    "account_id": {
+      "type": "identifier",
+      "description": "account id",
+      "sensitive": true
+    },
+    "transaction_id": {
+      "type": "identifier",
+      "description": "transaction id",
+      "sensitive": true
+    }
+  },
+  "outputs": {
+    "account_id": {
+      "type": "identifier",
+      "description": "account id",
+      "sensitive": true
+    },
+    "transaction_id": {
+      "type": "identifier",
+      "description": "transaction id",
+      "sensitive": true
+    },
+    "date": {
+      "type": "date",
+      "description": "Date from the detail page; list-page timezone discrepancy is documented.",
+      "sensitive": true
+    },
+    "description": {
+      "type": "string",
+      "description": "Transaction description",
+      "sensitive": true
+    },
+    "type": {
+      "type": "enum",
+      "description": "Credit or debit",
+      "sensitive": true,
+      "values": [
+        "credit",
+        "debit"
+      ]
+    },
+    "amount": {
+      "type": "decimal",
+      "description": "Exact decimal amount, never a binary float.",
+      "sensitive": true
+    },
+    "currency": {
+      "type": "enum",
+      "description": "Sandbox currency configuration.",
+      "sensitive": false,
+      "values": [
+        "USD"
+      ]
+    }
+  },
+  "targets": {
+    "overview": {
+      "description": "Loaded account overview",
+      "purpose": "view",
+      "cardinality": "one"
+    },
+    "account_link": {
+      "description": "Account link matching input account_id",
+      "purpose": "control",
+      "cardinality": "many"
+    },
+    "activity": {
+      "description": "Loaded activity for selected account",
+      "purpose": "view",
+      "cardinality": "one"
+    },
+    "account_number": {
+      "description": "Displayed activity account number",
+      "purpose": "data",
+      "cardinality": "one"
+    },
+    "account_transaction": {
+      "description": "Activity link matching input transaction_id",
+      "purpose": "control",
+      "cardinality": "many"
+    },
+    "find_transactions": {
+      "description": "Navigation to transaction search",
+      "purpose": "control",
+      "cardinality": "one"
+    },
+    "search": {
+      "description": "Loaded search form and account options",
+      "purpose": "view",
+      "cardinality": "one"
+    },
+    "account_select": {
+      "description": "Search account selector",
+      "purpose": "control",
+      "cardinality": "one"
+    },
+    "transaction_input": {
+      "description": "Search by transaction ID input",
+      "purpose": "control",
+      "cardinality": "one"
+    },
+    "search_by_id": {
+      "description": "Submit ID search, not the other search forms",
+      "purpose": "control",
+      "cardinality": "one"
+    },
+    "results": {
+      "description": "Completed transaction search result view",
+      "purpose": "view",
+      "cardinality": "one"
+    },
+    "result_transaction": {
+      "description": "Result link matching input transaction_id",
+      "purpose": "control",
+      "cardinality": "many"
+    },
+    "details": {
+      "description": "Loaded transaction details",
+      "purpose": "view",
+      "cardinality": "one"
+    },
+    "detail_id": {
+      "description": "Displayed transaction ID",
+      "purpose": "data",
+      "cardinality": "one"
+    },
+    "detail_date": {
+      "description": "Displayed detail date",
+      "purpose": "data",
+      "cardinality": "one"
+    },
+    "detail_description": {
+      "description": "Displayed description",
+      "purpose": "data",
+      "cardinality": "one"
+    },
+    "detail_type": {
+      "description": "Displayed credit/debit type",
+      "purpose": "data",
+      "cardinality": "one"
+    },
+    "detail_amount": {
+      "description": "Displayed amount",
+      "purpose": "data",
+      "cardinality": "one"
+    }
+  },
+  "known_outcomes": {
+    "account_not_available": "Requested account is not listed in the completed overview.",
+    "transaction_not_found_in_account": "Requested transaction is absent from the fully loaded account activity. No claim about other accounts."
+  },
+  "steps": [
+    {
+      "id": "check_account",
+      "description": "check account",
+      "action": {
+        "type": "wait",
+        "target": "overview"
+      },
+      "requires": [],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "overview"
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "predicate": "count_equals",
+            "target": "account_link",
+            "expected": 0
+          },
+          "code": "account_not_available"
+        }
+      ],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 2,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "open_account",
+      "description": "open account",
+      "action": {
+        "type": "click",
+        "target": "account_link"
+      },
+      "requires": [
+        {
+          "predicate": "count_equals",
+          "target": "account_link",
+          "expected": 1
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "activity"
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "check_membership",
+      "description": "check membership",
+      "action": {
+        "type": "wait",
+        "target": "activity"
+      },
+      "requires": [],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "activity"
+        },
+        {
+          "predicate": "text_equals",
+          "target": "account_number",
+          "expected": {
+            "input": "account_id"
+          }
+        }
+      ],
+      "outcomes": [
+        {
+          "when": {
+            "predicate": "count_equals",
+            "target": "account_transaction",
+            "expected": 0
+          },
+          "code": "transaction_not_found_in_account"
+        }
+      ],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 2,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "open_search",
+      "description": "open search",
+      "action": {
+        "type": "click",
+        "target": "find_transactions"
+      },
+      "requires": [
+        {
+          "predicate": "ready",
+          "target": "activity"
+        },
+        {
+          "predicate": "count_equals",
+          "target": "account_transaction",
+          "expected": 1
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "search"
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "select_account",
+      "description": "select account",
+      "action": {
+        "type": "select",
+        "target": "account_select",
+        "value": {
+          "input": "account_id"
+        }
+      },
+      "requires": [
+        {
+          "predicate": "ready",
+          "target": "search"
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "value_equals",
+          "target": "account_select",
+          "expected": {
+            "input": "account_id"
+          }
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "enter_transaction",
+      "description": "enter transaction",
+      "action": {
+        "type": "fill",
+        "target": "transaction_input",
+        "value": {
+          "input": "transaction_id"
+        }
+      },
+      "requires": [],
+      "ensures": [
+        {
+          "predicate": "value_equals",
+          "target": "transaction_input",
+          "expected": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "submit_search",
+      "description": "submit search",
+      "action": {
+        "type": "click",
+        "target": "search_by_id"
+      },
+      "requires": [
+        {
+          "predicate": "value_equals",
+          "target": "account_select",
+          "expected": {
+            "input": "account_id"
+          }
+        },
+        {
+          "predicate": "value_equals",
+          "target": "transaction_input",
+          "expected": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "results"
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "open_result",
+      "description": "open result",
+      "action": {
+        "type": "click",
+        "target": "result_transaction"
+      },
+      "requires": [
+        {
+          "predicate": "ready",
+          "target": "results"
+        },
+        {
+          "predicate": "count_equals",
+          "target": "result_transaction",
+          "expected": 1
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "details"
+        },
+        {
+          "predicate": "text_equals",
+          "target": "detail_id",
+          "expected": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    },
+    {
+      "id": "extract_details",
+      "description": "extract details",
+      "action": {
+        "type": "extract",
+        "fields": {
+          "account_id": {
+            "input": "account_id"
+          },
+          "transaction_id": {
+            "target": "detail_id",
+            "transform": "text"
+          },
+          "date": {
+            "target": "detail_date",
+            "transform": "date_mm_dd_yyyy"
+          },
+          "description": {
+            "target": "detail_description",
+            "transform": "text"
+          },
+          "type": {
+            "target": "detail_type",
+            "transform": "credit_debit"
+          },
+          "amount": {
+            "target": "detail_amount",
+            "transform": "usd_amount"
+          },
+          "currency": {
+            "literal": "USD"
+          }
+        }
+      },
+      "requires": [
+        {
+          "predicate": "ready",
+          "target": "details"
+        },
+        {
+          "predicate": "text_equals",
+          "target": "detail_id",
+          "expected": {
+            "input": "transaction_id"
+          }
+        }
+      ],
+      "ensures": [
+        {
+          "predicate": "ready",
+          "target": "details"
+        }
+      ],
+      "outcomes": [],
+      "timeout_ms": 10000,
+      "retry": {
+        "max_attempts": 1,
+        "delay_ms": 250
+      },
+      "on_failure": "intervene"
+    }
+  ],
+  "success_conditions": [
+    {
+      "predicate": "ready",
+      "target": "details"
+    },
+    {
+      "predicate": "text_equals",
+      "target": "detail_id",
+      "expected": {
+        "input": "transaction_id"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "source": "test_harness",
+  "actual_human_participated": false,
+  "checks": {
+    "paused_before_manual_work": true,
+    "same_page": true,
+    "same_session": true,
+    "explicit_epoch_advanced": true,
+    "completed": true,
+    "correct_transaction": true,
+    "correct_amount": true,
+    "ownership_returned": true
+  },
+  "passed": true,
+  "model_calls": 0
+}

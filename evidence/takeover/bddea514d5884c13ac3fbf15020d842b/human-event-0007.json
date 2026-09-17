@@ -1,0 +1,12 @@
+{
+  "format": "human_event_v1",
+  "source": "test_harness",
+  "event": "manual_action",
+  "timestamp": "2026-09-17T07:29:34.915575+00:00",
+  "session_id": "7ebc22038c0244bca23b1eb0c0fcee6f",
+  "control_epoch": 1,
+  "action": "submit",
+  "control": "other",
+  "tag": "FORM",
+  "values": "[REDACTED]"
+}

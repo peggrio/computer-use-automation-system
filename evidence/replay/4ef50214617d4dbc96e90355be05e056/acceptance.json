@@ -1,0 +1,11 @@
+{
+  "format": "replay_acceptance_v1",
+  "fixture": "policy_block",
+  "source": "test_harness",
+  "checks": {
+    "status_matches": true,
+    "code_matches": true
+  },
+  "passed": true,
+  "model_calls": 0
+}

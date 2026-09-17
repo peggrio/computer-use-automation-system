@@ -1,0 +1,15 @@
+{
+  "request_sha256": "ad154df705b6b68400c7e53fa4757161b5af49173084775fd1b8f8a625db1fb6",
+  "decision": {
+    "operation": "click",
+    "target": "find_transactions",
+    "input": null,
+    "reason": "navigate"
+  },
+  "receipt": {
+    "response_id": "resp_0cc55bbd0332c817016aab67e2aa6087d0a3162ea1b6780308",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 831,
+    "output_tokens": 85
+  }
+}

@@ -1,0 +1,124 @@
+{"sequence": 1, "timestamp": "2026-09-17T04:52:13.620705+00:00", "event": "run_started"}
+{"sequence": 2, "timestamp": "2026-09-17T04:52:14.731549+00:00", "event": "operation_started", "operation": "login", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 3, "timestamp": "2026-09-17T04:52:15.162937+00:00", "event": "operation_completed", "operation": "login", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 4, "timestamp": "2026-09-17T04:52:15.187781+00:00", "event": "operation_started", "operation": "perform", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 5, "timestamp": "2026-09-17T04:52:15.200670+00:00", "event": "operation_completed", "operation": "perform", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 6, "timestamp": "2026-09-17T04:52:15.201630+00:00", "event": "operation_started", "operation": "evaluate", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 7, "timestamp": "2026-09-17T04:52:15.209723+00:00", "event": "operation_completed", "operation": "evaluate", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 8, "timestamp": "2026-09-17T04:52:15.210428+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 9, "timestamp": "2026-09-17T04:52:15.313321+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 10, "timestamp": "2026-09-17T04:52:15.314474+00:00", "event": "operation_started", "operation": "evaluate", "target": "overview", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 11, "timestamp": "2026-09-17T04:52:15.321745+00:00", "event": "operation_completed", "operation": "evaluate", "target": "overview", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 12, "timestamp": "2026-09-17T04:52:15.321933+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 13, "timestamp": "2026-09-17T04:52:15.365583+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 14, "timestamp": "2026-09-17T04:52:15.366422+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 15, "timestamp": "2026-09-17T04:52:15.389950+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 16, "timestamp": "2026-09-17T04:52:15.390136+00:00", "event": "operation_started", "operation": "resolve", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 17, "timestamp": "2026-09-17T04:52:15.448137+00:00", "event": "operation_completed", "operation": "resolve", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 18, "timestamp": "2026-09-17T04:52:15.448661+00:00", "event": "operation_started", "operation": "perform", "target": "account_link", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 19, "timestamp": "2026-09-17T04:52:15.547567+00:00", "event": "operation_started", "operation": "click", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 20, "timestamp": "2026-09-17T04:52:15.636026+00:00", "event": "operation_completed", "operation": "perform", "target": "account_link", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 21, "timestamp": "2026-09-17T04:52:15.636813+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 22, "timestamp": "2026-09-17T04:52:15.649310+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 23, "timestamp": "2026-09-17T04:52:15.701213+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 24, "timestamp": "2026-09-17T04:52:15.714377+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 25, "timestamp": "2026-09-17T04:52:15.716072+00:00", "event": "operation_started", "operation": "perform", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 26, "timestamp": "2026-09-17T04:52:15.729155+00:00", "event": "operation_completed", "operation": "perform", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 27, "timestamp": "2026-09-17T04:52:15.729836+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 28, "timestamp": "2026-09-17T04:52:15.739442+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 29, "timestamp": "2026-09-17T04:52:15.739599+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_number", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 30, "timestamp": "2026-09-17T04:52:15.748453+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_number", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 31, "timestamp": "2026-09-17T04:52:15.749056+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 32, "timestamp": "2026-09-17T04:52:15.769313+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 33, "timestamp": "2026-09-17T04:52:15.770261+00:00", "event": "operation_started", "operation": "evaluate", "target": "activity", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 34, "timestamp": "2026-09-17T04:52:15.779687+00:00", "event": "operation_completed", "operation": "evaluate", "target": "activity", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 35, "timestamp": "2026-09-17T04:52:15.779847+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 36, "timestamp": "2026-09-17T04:52:15.799949+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 37, "timestamp": "2026-09-17T04:52:15.800209+00:00", "event": "operation_started", "operation": "evaluate", "target": "find_transactions", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 38, "timestamp": "2026-09-17T04:52:15.808110+00:00", "event": "operation_completed", "operation": "evaluate", "target": "find_transactions", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 39, "timestamp": "2026-09-17T04:52:15.809226+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 40, "timestamp": "2026-09-17T04:52:15.829655+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 41, "timestamp": "2026-09-17T04:52:15.829873+00:00", "event": "operation_started", "operation": "resolve", "target": "find_transactions", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 42, "timestamp": "2026-09-17T04:52:15.848312+00:00", "event": "operation_completed", "operation": "resolve", "target": "find_transactions", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 43, "timestamp": "2026-09-17T04:52:15.848836+00:00", "event": "operation_started", "operation": "perform", "target": "find_transactions", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 44, "timestamp": "2026-09-17T04:52:15.878496+00:00", "event": "operation_started", "operation": "click", "target": "find_transactions", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 45, "timestamp": "2026-09-17T04:52:15.969708+00:00", "event": "operation_completed", "operation": "perform", "target": "find_transactions", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 46, "timestamp": "2026-09-17T04:52:15.970816+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 47, "timestamp": "2026-09-17T04:52:15.982681+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 48, "timestamp": "2026-09-17T04:52:15.983903+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 49, "timestamp": "2026-09-17T04:52:15.991076+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 50, "timestamp": "2026-09-17T04:52:15.991215+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_select", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 51, "timestamp": "2026-09-17T04:52:16.002333+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 52, "timestamp": "2026-09-17T04:52:16.003157+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 53, "timestamp": "2026-09-17T04:52:16.021928+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 54, "timestamp": "2026-09-17T04:52:16.022151+00:00", "event": "operation_started", "operation": "resolve", "target": "account_select", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 55, "timestamp": "2026-09-17T04:52:16.039845+00:00", "event": "operation_completed", "operation": "resolve", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 56, "timestamp": "2026-09-17T04:52:16.040345+00:00", "event": "operation_started", "operation": "perform", "target": "account_select", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 57, "timestamp": "2026-09-17T04:52:16.072512+00:00", "event": "operation_started", "operation": "select", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 58, "timestamp": "2026-09-17T04:52:16.079612+00:00", "event": "operation_completed", "operation": "perform", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 59, "timestamp": "2026-09-17T04:52:16.080245+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 60, "timestamp": "2026-09-17T04:52:16.085419+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 61, "timestamp": "2026-09-17T04:52:16.085554+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_select", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 62, "timestamp": "2026-09-17T04:52:16.095871+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 63, "timestamp": "2026-09-17T04:52:16.097063+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 64, "timestamp": "2026-09-17T04:52:16.103082+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 65, "timestamp": "2026-09-17T04:52:16.103321+00:00", "event": "operation_started", "operation": "evaluate", "target": "transaction_input", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 66, "timestamp": "2026-09-17T04:52:16.113416+00:00", "event": "operation_completed", "operation": "evaluate", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 67, "timestamp": "2026-09-17T04:52:16.114228+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 68, "timestamp": "2026-09-17T04:52:16.129260+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 69, "timestamp": "2026-09-17T04:52:16.129408+00:00", "event": "operation_started", "operation": "resolve", "target": "transaction_input", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 70, "timestamp": "2026-09-17T04:52:16.146148+00:00", "event": "operation_completed", "operation": "resolve", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 71, "timestamp": "2026-09-17T04:52:16.146646+00:00", "event": "operation_started", "operation": "perform", "target": "transaction_input", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 72, "timestamp": "2026-09-17T04:52:16.184160+00:00", "event": "operation_started", "operation": "fill", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 73, "timestamp": "2026-09-17T04:52:16.191622+00:00", "event": "operation_completed", "operation": "perform", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 74, "timestamp": "2026-09-17T04:52:16.192356+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 75, "timestamp": "2026-09-17T04:52:16.197937+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 76, "timestamp": "2026-09-17T04:52:16.198067+00:00", "event": "operation_started", "operation": "evaluate", "target": "transaction_input", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 77, "timestamp": "2026-09-17T04:52:16.208913+00:00", "event": "operation_completed", "operation": "evaluate", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 78, "timestamp": "2026-09-17T04:52:16.209880+00:00", "event": "operation_started", "operation": "evaluate", "target": "search", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 79, "timestamp": "2026-09-17T04:52:16.214919+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 80, "timestamp": "2026-09-17T04:52:16.215096+00:00", "event": "operation_started", "operation": "evaluate", "target": "search_by_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 81, "timestamp": "2026-09-17T04:52:16.225655+00:00", "event": "operation_completed", "operation": "evaluate", "target": "search_by_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 82, "timestamp": "2026-09-17T04:52:16.225937+00:00", "event": "operation_started", "operation": "evaluate", "target": "account_select", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 83, "timestamp": "2026-09-17T04:52:16.236297+00:00", "event": "operation_completed", "operation": "evaluate", "target": "account_select", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 84, "timestamp": "2026-09-17T04:52:16.236463+00:00", "event": "operation_started", "operation": "evaluate", "target": "transaction_input", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 85, "timestamp": "2026-09-17T04:52:16.246516+00:00", "event": "operation_completed", "operation": "evaluate", "target": "transaction_input", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 86, "timestamp": "2026-09-17T04:52:16.247272+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 87, "timestamp": "2026-09-17T04:52:16.257731+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 88, "timestamp": "2026-09-17T04:52:16.257901+00:00", "event": "operation_started", "operation": "resolve", "target": "search_by_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 89, "timestamp": "2026-09-17T04:52:16.273492+00:00", "event": "operation_completed", "operation": "resolve", "target": "search_by_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 90, "timestamp": "2026-09-17T04:52:16.273974+00:00", "event": "operation_started", "operation": "perform", "target": "search_by_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 91, "timestamp": "2026-09-17T04:52:16.307982+00:00", "event": "operation_started", "operation": "click", "target": "search_by_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 92, "timestamp": "2026-09-17T04:52:16.330297+00:00", "event": "operation_completed", "operation": "perform", "target": "search_by_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 93, "timestamp": "2026-09-17T04:52:16.330969+00:00", "event": "operation_started", "operation": "evaluate", "target": "results", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 94, "timestamp": "2026-09-17T04:52:16.333819+00:00", "event": "operation_completed", "operation": "evaluate", "target": "results", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 95, "timestamp": "2026-09-17T04:52:16.385956+00:00", "event": "operation_started", "operation": "evaluate", "target": "results", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 96, "timestamp": "2026-09-17T04:52:16.395686+00:00", "event": "operation_completed", "operation": "evaluate", "target": "results", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 97, "timestamp": "2026-09-17T04:52:16.397324+00:00", "event": "operation_started", "operation": "evaluate", "target": "results", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 98, "timestamp": "2026-09-17T04:52:16.408469+00:00", "event": "operation_completed", "operation": "evaluate", "target": "results", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 99, "timestamp": "2026-09-17T04:52:16.408702+00:00", "event": "operation_started", "operation": "evaluate", "target": "result_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 100, "timestamp": "2026-09-17T04:52:16.425156+00:00", "event": "operation_completed", "operation": "evaluate", "target": "result_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 101, "timestamp": "2026-09-17T04:52:16.428001+00:00", "event": "operation_started", "operation": "observe", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 102, "timestamp": "2026-09-17T04:52:16.439816+00:00", "event": "operation_completed", "operation": "observe", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 103, "timestamp": "2026-09-17T04:52:16.439977+00:00", "event": "operation_started", "operation": "resolve", "target": "result_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 104, "timestamp": "2026-09-17T04:52:16.457779+00:00", "event": "operation_completed", "operation": "resolve", "target": "result_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 105, "timestamp": "2026-09-17T04:52:16.458286+00:00", "event": "operation_started", "operation": "perform", "target": "result_transaction", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 106, "timestamp": "2026-09-17T04:52:16.492320+00:00", "event": "operation_started", "operation": "click", "target": "result_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 107, "timestamp": "2026-09-17T04:52:16.564923+00:00", "event": "operation_completed", "operation": "perform", "target": "result_transaction", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 108, "timestamp": "2026-09-17T04:52:16.566388+00:00", "event": "operation_started", "operation": "evaluate", "target": "details", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 109, "timestamp": "2026-09-17T04:52:16.596349+00:00", "event": "operation_completed", "operation": "evaluate", "target": "details", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 110, "timestamp": "2026-09-17T04:52:16.597389+00:00", "event": "operation_started", "operation": "evaluate", "target": "details", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 111, "timestamp": "2026-09-17T04:52:16.615948+00:00", "event": "operation_completed", "operation": "evaluate", "target": "details", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 112, "timestamp": "2026-09-17T04:52:16.616150+00:00", "event": "operation_started", "operation": "evaluate", "target": "detail_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 113, "timestamp": "2026-09-17T04:52:16.627724+00:00", "event": "operation_completed", "operation": "evaluate", "target": "detail_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 114, "timestamp": "2026-09-17T04:52:16.628832+00:00", "event": "operation_started", "operation": "perform", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 115, "timestamp": "2026-09-17T04:52:16.704626+00:00", "event": "operation_completed", "operation": "perform", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 116, "timestamp": "2026-09-17T04:52:16.705283+00:00", "event": "operation_started", "operation": "evaluate", "target": "details", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 117, "timestamp": "2026-09-17T04:52:16.722695+00:00", "event": "operation_completed", "operation": "evaluate", "target": "details", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 118, "timestamp": "2026-09-17T04:52:16.722855+00:00", "event": "operation_started", "operation": "evaluate", "target": "detail_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 119, "timestamp": "2026-09-17T04:52:16.732067+00:00", "event": "operation_completed", "operation": "evaluate", "target": "detail_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 120, "timestamp": "2026-09-17T04:52:16.732798+00:00", "event": "operation_started", "operation": "evaluate", "target": "details", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 121, "timestamp": "2026-09-17T04:52:16.749283+00:00", "event": "operation_completed", "operation": "evaluate", "target": "details", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 122, "timestamp": "2026-09-17T04:52:16.749485+00:00", "event": "operation_started", "operation": "evaluate", "target": "detail_id", "reason": "requested_operation", "control_epoch": 0}
+{"sequence": 123, "timestamp": "2026-09-17T04:52:16.759506+00:00", "event": "operation_completed", "operation": "evaluate", "target": "detail_id", "reason": "policy_checked", "control_epoch": 0}
+{"sequence": 124, "timestamp": "2026-09-17T04:52:16.808554+00:00", "event": "run_finished", "reason": "finished"}

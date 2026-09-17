@@ -1,0 +1,1155 @@
+{
+  "format": "redacted_dom_v1",
+  "root": {
+    "tag": "body",
+    "visible": true,
+    "children": [
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "p",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "b",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h2",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "ul",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "div",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "div",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "h1",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "table",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "thead",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "th",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "th",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "th",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "tbody",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "a",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "b",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "tag": "b",
+                                            "visible": true,
+                                            "children": [
+                                              {
+                                                "text": "[REDACTED]"
+                                              }
+                                            ]
+                                          }
+                                        ]
+                                      },
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": []
+                                      }
+                                    ]
+                                  }
+                                ]
+                              },
+                              {
+                                "tag": "tfoot",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "tag": "tr",
+                                    "visible": true,
+                                    "children": [
+                                      {
+                                        "tag": "td",
+                                        "visible": true,
+                                        "children": [
+                                          {
+                                            "text": "[REDACTED]"
+                                          }
+                                        ]
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "div",
+                        "visible": false,
+                        "children": [
+                          {
+                            "tag": "h1",
+                            "visible": false,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "visible": false,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

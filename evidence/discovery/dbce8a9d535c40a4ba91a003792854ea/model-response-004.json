@@ -1,0 +1,15 @@
+{
+  "request_sha256": "004a6e5cd681e494df65958fc383cbdd42640128222497b2f9cd80be4980006f",
+  "decision": {
+    "operation": "click",
+    "target": "search_by_id",
+    "input": null,
+    "reason": "submit_search"
+  },
+  "receipt": {
+    "response_id": "resp_00ca8650db60cf46016aab67e9545087d09c44267abc1fa80a",
+    "model": "gpt-5.4-mini-2026-03-17",
+    "input_tokens": 916,
+    "output_tokens": 130
+  }
+}

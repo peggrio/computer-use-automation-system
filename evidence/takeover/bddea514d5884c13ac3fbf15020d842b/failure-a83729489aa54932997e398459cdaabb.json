@@ -1,0 +1,774 @@
+{
+  "format": "redacted_dom_v1",
+  "root": {
+    "tag": "body",
+    "visible": true,
+    "children": [
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "a",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "img",
+                    "visible": true,
+                    "content": "[OMITTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "h2",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "div",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "form",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "p",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "b",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "text": "[REDACTED]"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "input",
+                                "visible": true,
+                                "enabled": true,
+                                "value": "[REDACTED]",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "p",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "b",
+                                "visible": true,
+                                "children": [
+                                  {
+                                    "text": "[REDACTED]"
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "input",
+                                "visible": true,
+                                "enabled": true,
+                                "value": "[REDACTED]",
+                                "children": []
+                              }
+                            ]
+                          },
+                          {
+                            "tag": "div",
+                            "visible": true,
+                            "children": [
+                              {
+                                "tag": "input",
+                                "visible": true,
+                                "enabled": true,
+                                "value": "[REDACTED]",
+                                "children": []
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "p",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "div",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "span",
+                    "visible": true,
+                    "children": []
+                  },
+                  {
+                    "tag": "ul",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "ul",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "h4",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "ul",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "tag": "li",
+                        "visible": true,
+                        "children": [
+                          {
+                            "tag": "a",
+                            "visible": true,
+                            "children": [
+                              {
+                                "text": "[REDACTED]"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "p",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "div",
+        "visible": true,
+        "children": [
+          {
+            "tag": "div",
+            "visible": true,
+            "children": [
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      },
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "p",
+                "visible": true,
+                "children": [
+                  {
+                    "text": "[REDACTED]"
+                  }
+                ]
+              },
+              {
+                "tag": "ul",
+                "visible": true,
+                "children": [
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "text": "[REDACTED]"
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "li",
+                    "visible": true,
+                    "children": [
+                      {
+                        "tag": "a",
+                        "visible": true,
+                        "children": [
+                          {
+                            "text": "[REDACTED]"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

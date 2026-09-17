@@ -1,0 +1,12 @@
+{
+  "format": "human_event_v1",
+  "source": "test_harness",
+  "event": "manual_action",
+  "timestamp": "2026-09-17T07:55:44.678581+00:00",
+  "session_id": "548bcf234b78480da8d77b961dfa156b",
+  "control_epoch": 1,
+  "action": "change",
+  "control": "login_password",
+  "tag": "INPUT",
+  "values": "[REDACTED]"
+}

@@ -1,0 +1,168 @@
+{
+  "context": {
+    "goal": "Look up transaction_id in account_id and return its verified details without changing banking data.",
+    "constraints": [
+      "Establish that the requested transaction belongs to the requested account using the account activity UI. Global transaction search alone cannot establish membership.",
+      "Explicitly apply both input references to the search form during this run, even if a field already has the requested value, so the learned capability works with different inputs.",
+      "Finish only when membership, transaction identity, and the detail fields can be verified."
+    ],
+    "inputs": [
+      "account_id",
+      "transaction_id"
+    ],
+    "outputs": [
+      "account_id",
+      "amount",
+      "currency",
+      "date",
+      "description",
+      "transaction_id",
+      "type"
+    ],
+    "controls": [
+      {
+        "target": "account_link",
+        "operation": "click",
+        "input": null,
+        "description": "Account link matching input account_id"
+      },
+      {
+        "target": "account_select",
+        "operation": "select",
+        "input": "account_id",
+        "description": "Search account selector"
+      },
+      {
+        "target": "find_transactions",
+        "operation": "click",
+        "input": null,
+        "description": "Navigation to transaction search"
+      },
+      {
+        "target": "result_transaction",
+        "operation": "click",
+        "input": null,
+        "description": "Result link matching input transaction_id"
+      },
+      {
+        "target": "search_by_id",
+        "operation": "click",
+        "input": null,
+        "description": "Submit ID search, not the other search forms"
+      },
+      {
+        "target": "transaction_input",
+        "operation": "fill",
+        "input": "transaction_id",
+        "description": "Search by transaction ID input"
+      }
+    ],
+    "wait_targets": [
+      "activity",
+      "details",
+      "overview",
+      "results",
+      "search"
+    ],
+    "observation": {
+      "ready_views": {
+        "overview": true,
+        "activity": false,
+        "search": false,
+        "results": false,
+        "details": false
+      },
+      "matching_controls": {
+        "account_link": "one",
+        "account_number": "unknown",
+        "account_transaction": "unknown",
+        "find_transactions": "one",
+        "account_select": "unknown",
+        "transaction_input": "unknown",
+        "search_by_id": "unknown",
+        "result_transaction": "unknown",
+        "detail_id": "unknown",
+        "detail_date": "unknown",
+        "detail_description": "unknown",
+        "detail_type": "unknown",
+        "detail_amount": "unknown"
+      },
+      "input_matches": {
+        "account_matches": false,
+        "transaction_matches": false,
+        "search_account_matches": false,
+        "search_transaction_matches": false
+      },
+      "membership_verified": false,
+      "applied_inputs": []
+    },
+    "history": [],
+    "steps_remaining": 16
+  },
+  "schema": {
+    "type": "object",
+    "properties": {
+      "operation": {
+        "type": "string",
+        "enum": [
+          "wait",
+          "click",
+          "fill",
+          "select",
+          "finish",
+          "stop"
+        ]
+      },
+      "target": {
+        "enum": [
+          null,
+          "account_link",
+          "account_number",
+          "account_select",
+          "account_transaction",
+          "activity",
+          "detail_amount",
+          "detail_date",
+          "detail_description",
+          "detail_id",
+          "detail_type",
+          "details",
+          "find_transactions",
+          "overview",
+          "result_transaction",
+          "results",
+          "search",
+          "search_by_id",
+          "transaction_input"
+        ]
+      },
+      "input": {
+        "enum": [
+          null,
+          "account_id",
+          "transaction_id"
+        ]
+      },
+      "reason": {
+        "type": "string",
+        "enum": [
+          "inspect_account",
+          "verify_membership",
+          "navigate",
+          "apply_input",
+          "submit_search",
+          "wait_for_view",
+          "verify_completion",
+          "cannot_continue"
+        ]
+      }
+    },
+    "required": [
+      "operation",
+      "target",
+      "input",
+      "reason"
+    ],
+    "additionalProperties": false
+  }
+}
