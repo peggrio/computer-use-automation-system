@@ -35,8 +35,10 @@ Replay version `0.2.0` with a different transaction from the discovery run:
 
 ```sh
 .venv/bin/python -m tools.replay --version 0.2.0 \
-  --account 12345 --transaction 12256 --headed
+  --account 12345 --transaction 12256 --headed --slow-mo-ms 500
 ```
+
+For a visible demonstration, `--slow-mo-ms` adds a delay to each Playwright operation. Accepted values are `0` through `5000`; the default is `0`.
 
 Authorized Python callers receive typed outputs in memory. The terminal receives only a redacted summary and output field names. Success and business outcomes exit 0, recoverable failures exit 3, and hard failures exit 1.
 

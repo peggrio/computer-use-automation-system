@@ -22,6 +22,7 @@ async def run_simulation(args):
         cap, profile, {'account_id': args.account, 'transaction_id': args.transaction},
         base_url=args.target, evidence_root=args.evidence_root,
         evidence_source='deterministic_replay', headless=not args.headed,
+        slow_mo_ms=args.slow_mo_ms,
     ) as adapter:
         await adapter.login('john', 'demo')
         runner = Replay(adapter, allow_pause=True)
@@ -90,7 +91,7 @@ async def main(args):
     check_registered_policy(entry,SafetyPolicy(args.target).config)
     async with BrowserAdapter(cap,profile,{'account_id':args.account,'transaction_id':args.transaction},
                               base_url=args.target,headless=False,evidence_root=args.evidence_root,
-                              evidence_source='deterministic_replay') as adapter:
+                              evidence_source='deterministic_replay',slow_mo_ms=args.slow_mo_ms) as adapter:
         await adapter.login(os.environ.get('PARABANK_USERNAME','john'),os.environ.get('PARABANK_PASSWORD','demo'))
         runner=Replay(adapter,allow_pause=True)
         handoff=Takeover(runner,max_human_seconds=args.operator_timeout)

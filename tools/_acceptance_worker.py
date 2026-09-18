@@ -48,7 +48,7 @@ async def main(root):
     replay_status = await run_demo(root)
     takeover_status = await run_simulation(argparse.Namespace(
         capability='lookup_transaction', version='0.2.0', account='12345', transaction='12256',
-        target='http://127.0.0.1:8080', evidence_root=root, headed=False,
+        target='http://127.0.0.1:8080', evidence_root=root, headed=False, slow_mo_ms=0,
     ))
     if replay_status or takeover_status or any(attempts.values()):
         raise RuntimeError('Isolated acceptance failed')

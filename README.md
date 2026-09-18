@@ -28,10 +28,11 @@ Wait for <http://127.0.0.1:8080/parabank/> to show the login page. The sandbox u
 Replay the retained, reviewed capability with new inputs:
 
 ```sh
-.venv/bin/python -m tools.replay --account 12345 --transaction 12256 --headed
+.venv/bin/python -m tools.replay --account 12345 --transaction 12256 \
+  --headed --slow-mo-ms 500
 ```
 
-Replay makes no model calls. It prints a redacted result summary and writes detailed local evidence under the ignored `runs/` directory.
+`--slow-mo-ms 500` adds roughly half a second to each Playwright operation so the visible workflow is easier to follow. Use a value from `0` to `5000`, or omit it for full speed. Replay makes no model calls. It prints a redacted result summary and writes detailed local evidence under the ignored `runs/` directory.
 
 Try two more outcomes:
 

@@ -45,7 +45,8 @@ async def run_replay(args, *, fixture=None, fixture_name=None):
     inputs = {'account_id':args.account,'transaction_id':args.transaction}
     try:
         check_fields(inputs,cap['inputs'],'inputs')
-        if not (1 <= args.max_duration_ms <= 300000 and 1 <= args.max_actions <= 1000):
+        if not (1 <= args.max_duration_ms <= 300000 and 1 <= args.max_actions <= 1000
+                and 0 <= args.slow_mo_ms <= 5000):
             raise UIError('invalid_input')
         check_registered_policy(entry, SafetyPolicy(args.target).config)
     except (ContractError,UIError) as error:
@@ -57,7 +58,8 @@ async def run_replay(args, *, fixture=None, fixture_name=None):
         validate(result,cap,profile)
         return result, 'hard_failure', None
     async with BrowserAdapter(cap,profile,inputs,base_url=args.target,headless=not args.headed,
-                              evidence_root=args.evidence_root,evidence_source='deterministic_replay') as adapter:
+                              evidence_root=args.evidence_root,evidence_source='deterministic_replay',
+                              slow_mo_ms=args.slow_mo_ms) as adapter:
         evidence = str(adapter.evidence.directory)
         await adapter.login(os.environ.get('PARABANK_USERNAME','john'),os.environ.get('PARABANK_PASSWORD','demo'))
         if fixture is not None:
@@ -76,6 +78,8 @@ def parser(*, include_demo=True):
     p.add_argument('--transaction',default='12256',help='Defaults to a different transaction from discovery')
     p.add_argument('--target',default='http://127.0.0.1:8080')
     p.add_argument('--headed',action='store_true')
+    p.add_argument('--slow-mo-ms', type=int, default=0,
+                   help='Delay Playwright operations by 0-5000 ms for visible demos')
     p.add_argument('--evidence-root',default=None)
     p.add_argument('--max-duration-ms',type=int,default=120000)
     p.add_argument('--max-actions',type=int,default=40)

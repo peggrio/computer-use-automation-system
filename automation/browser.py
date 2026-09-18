@@ -105,9 +105,11 @@ class BrowserAdapter:
     # Lifecycle and declared adapter contract.
     def __init__(self, capability, profile, inputs, base_url='http://127.0.0.1:8080', *,
                  headless=True, timeout_ms=10000, timezone_id='UTC', policy_config=None, evidence_root=None,
-                 evidence_source='adapter_execution'):
+                 evidence_source='adapter_execution', slow_mo_ms=0):
         validate(profile, capability)
         check_fields(inputs, capability['inputs'], 'inputs')
+        if type(slow_mo_ms) is not int or not 0 <= slow_mo_ms <= 5000:
+            raise UIError('invalid_input')
         if profile['adapter'] != {'name': 'playwright_browser', 'contract_version': '1.0.0'}:
             raise UIError('adapter_unsupported')
         if profile['application']['release'] != IMAGE or profile['readiness_contract'] != 'parabank_browser_v1':
@@ -128,6 +130,7 @@ class BrowserAdapter:
         self._human_login_active = False
         self._closing = False
         self.headless, self.timeout_ms, self.timezone_id = headless, timeout_ms, timezone_id
+        self.slow_mo_ms = slow_mo_ms
         self.session_id = uuid4().hex
         self.epoch, self.owner = 0, 'automation'
         self._lock = asyncio.Lock()
@@ -140,7 +143,9 @@ class BrowserAdapter:
     async def __aenter__(self):
         self._pw = await async_playwright().start()
         try:
-            self._browser = await self._pw.chromium.launch(headless=self.headless)
+            self._browser = await self._pw.chromium.launch(
+                headless=self.headless, slow_mo=self.slow_mo_ms
+            )
             self.context = await self._browser.new_context(timezone_id=self.timezone_id, service_workers='block', accept_downloads=False)
             await self.context.route('**/*', self._route)
             await self.context.route_web_socket('**/*', self._websocket)
