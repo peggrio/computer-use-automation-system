@@ -24,6 +24,9 @@ class PolicyTests(unittest.TestCase):
 
     def test_closed_destinations_methods_and_query_fields(self):
         base = self.policy.origin
+        # Headed Chromium requests the origin favicon automatically.
+        self.assertTrue(self.policy.allows_request(base+'/favicon.ico', 'GET'))
+        self.assertFalse(self.policy.allows_request(base+'/favicon.ico?cache=1', 'GET'))
         self.assertTrue(self.policy.allows_request(base+'/parabank/activity.htm?id=12345', 'GET'))
         self.assertTrue(self.policy.allows_request(base+'/parabank/index.htm?ConnType=JDBC', 'GET'))
         self.assertFalse(self.policy.allows_request(base+'/parabank/index.htm?ConnType='+CANARY, 'GET'))

@@ -14,7 +14,7 @@
       },
       "directory": "capabilities/lookup_transaction/0.2.0",
       "discovery_run_id": "dbce8a9d535c40a4ba91a003792854ea",
-      "policy_sha256": "972ff3081dd2dfa119b0a5adcb29b3c361f3c1d9c9d43bc6fcefe42f901525c4",
+      "policy_sha256": "da26960e29909fdf2b8577c575f867eb59d1982dcc6b8a99d895b61927f3f39a",
       "scope": "local_parabank_read_only",
       "review": "Observed checkpoints, parameterized actions and outcome guards reviewed for local replay."
     }

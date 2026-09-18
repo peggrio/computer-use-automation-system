@@ -14,6 +14,12 @@
     },
     {
       "method": "GET",
+      "path_pattern": "/favicon\\.ico",
+      "query": {},
+      "required_query": []
+    },
+    {
+      "method": "GET",
       "path_pattern": "/parabank/index\\.htm",
       "query": {"ConnType": "JDBC"},
       "required_query": []
