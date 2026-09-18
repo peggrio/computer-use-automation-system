@@ -1,4 +1,4 @@
-# Step 4: Safety and evidence collection
+# Safety and evidence collection
 
 ## Implemented boundary
 
@@ -59,8 +59,8 @@ The reviewed metadata and permitted constants must be extended deliberately for 
 From the repository root, with Docker running and UI dependencies installed:
 
 ```sh
-.venv/bin/python -m tools.ui_smoke --export-draft
-.venv/bin/python -m tools.ui_smoke --inject-failure
+.venv/bin/python -m tools._ui --export-draft
+.venv/bin/python -m tools._ui --inject-failure
 ```
 
 The second command injects a local activity-response failure and intentionally exits with code 1. Both commands print the generated evidence directory. To create a reviewable bundle in a chosen location, use `--evidence-root evidence/safety-demo`.

@@ -1,4 +1,4 @@
-# Step 7: Live human takeover
+# Live human intervention
 
 ## Run the interactive demonstration
 
@@ -62,9 +62,9 @@ The automation action/time budgets carry over between segments. An uncertain act
 
 Automated real-browser tests cover same-session login and return, mid-workflow expiry, redaction, rejected automation commands during human ownership, entry-state rejection, stale/foreign/duplicate/concurrent returns, abort, timeout, session loss, policy faults and budget continuity.
 
-The retained [acceptance evidence](../evidence/takeover/README.md) is explicitly labeled **test_harness**, with `actual_human_participated: false`. It uses real Chromium UI controls to simulate operator login, then invokes the explicit return protocol and verifies typed results. It is not presented as evidence that a person participated.
+The retained [acceptance evidence](../../evidence/takeover/README.md) is explicitly labeled **test_harness**, with `actual_human_participated: false`. It uses real Chromium UI controls to simulate operator login, then invokes the explicit return protocol and verifies typed results. It is not presented as evidence that a person participated.
 
 ```sh
-.venv/bin/python -m tools.takeover_demo --evidence-root runs
+.venv/bin/python -m tools.takeover --simulate --evidence-root runs
 .venv/bin/python -m unittest discover -s tests -v
 ```

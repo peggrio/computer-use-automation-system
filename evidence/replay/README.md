@@ -24,7 +24,7 @@ Slow loading, HTTP 500, session expiry and policy-block cases are labeled test-h
 Reproduce all ten cases without a model or API key:
 
 ```sh
-.venv/bin/python -m tools.replay_demo --evidence-root runs
+.venv/bin/python -m tools.replay --demo --evidence-root runs
 ```
 
 Full regression suite: 84 tests passed after Step 6. No files or evidence were pushed to GitHub.

@@ -20,5 +20,5 @@ The acceptance export preserves browser logs unchanged and makes its report path
 Reproduce using the [README demo commands](../README.md). The original discovery can be checked offline:
 
 ```sh
-.venv/bin/python -m tools.verify_discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
+.venv/bin/python -m tools.verify discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
 ```

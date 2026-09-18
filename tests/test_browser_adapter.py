@@ -7,7 +7,7 @@ from time import monotonic
 
 from automation.browser import BrowserAdapter, transform
 from automation.errors import UIError
-from tools.ui_smoke import act, walkthrough
+from tools._ui import act, walkthrough
 from tools.validate_contracts import ROOT, load
 
 

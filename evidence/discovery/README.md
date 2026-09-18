@@ -10,7 +10,7 @@ Evidence excludes the API key, login credentials, runtime account/transaction va
 From the repository root:
 
 ```sh
-.venv/bin/python -m tools.verify_discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
+.venv/bin/python -m tools.verify discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
 ```
 
 This is an offline consistency check. Deterministic changed-input replay is implemented; see [replay evidence](../replay/README.md) and the [complete acceptance report](../acceptance/report.json).

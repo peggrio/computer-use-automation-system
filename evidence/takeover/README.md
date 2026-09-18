@@ -11,7 +11,7 @@ All acceptance checks passed: same page and session, advanced control epoch, cor
 Try the interactive flow yourself:
 
 ```sh
-.venv/bin/python -m tools.takeover --demo-expiry
+.venv/bin/python -m tools.takeover --demo
 ```
 
-Use the opened Chromium window to log in with the public local sample credentials, return to Accounts Overview, then type `resume` in the terminal. See [the takeover guide](../../docs/live-takeover.md) for scope and recovery semantics.
+Use the opened Chromium window to log in with the public local sample credentials, return to Accounts Overview, then type `resume` in the terminal. See [the intervention guide](../../docs/advanced/live-takeover.md) for scope and recovery semantics.

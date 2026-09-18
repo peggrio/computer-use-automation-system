@@ -23,7 +23,7 @@ from playwright.async_api import Error as PlaywrightError, async_playwright
 from tools.validate_contracts import SCHEMA, check_fields, validate
 from jsonschema import Draft202012Validator
 from .errors import UIError
-from .parabank import IMAGE, RULES, ready
+from adapters.parabank import IMAGE, RULES, ready
 from .policy import SafetyPolicy
 from .evidence import EvidenceWriter, STRUCTURAL_SNAPSHOT
 
@@ -102,6 +102,7 @@ def transform(value, name):
 
 
 class BrowserAdapter:
+    # Lifecycle and declared adapter contract.
     def __init__(self, capability, profile, inputs, base_url='http://127.0.0.1:8080', *,
                  headless=True, timeout_ms=10000, timezone_id='UTC', policy_config=None, evidence_root=None,
                  evidence_source='adapter_execution'):
@@ -178,6 +179,7 @@ class BrowserAdapter:
                 'strategies': ['role', 'css'], 'actions': ['click', 'fill', 'select', 'wait', 'extract'],
                 'readiness_contract': 'parabank_browser_v1', 'readiness_rules': sorted(RULES)}
 
+    # Browser and network safety boundary.
     def _network_denied(self, reason='destination_not_allowed'):
         self._fault = 'policy_denied'
         try:
@@ -279,6 +281,7 @@ class BrowserAdapter:
         records = [r for r in self._records.values() if r['document']]
         return bool(records and records[-1]['finished'] and records[-1]['status'] == 200)
 
+    # Session health and ownership.
     async def _check(self, *, login_ok=False):
         if self.page.is_closed():
             raise UIError('session_lost')
@@ -337,6 +340,7 @@ class BrowserAdapter:
             finally:
                 self._login_active = False
 
+    # Observation and logical-target resolution.
     @safe_driver_errors
     async def observe(self):
         await self._check()
@@ -431,6 +435,7 @@ class BrowserAdapter:
             raise UIError('policy_denied', target)
         return (await element.inner_text()).strip()
 
+    # Conditions, waits, and action execution.
     @safe_driver_errors
     async def evaluate(self, condition):
         if not CONDITION_VALIDATOR.is_valid(condition):
@@ -532,6 +537,7 @@ class BrowserAdapter:
             finally:
                 await handle.dispose()
 
+    # Failure evidence contains structural metadata only.
     async def capture_failure(self):
         try:
             value = await self.page.evaluate(STRUCTURAL_SNAPSHOT)

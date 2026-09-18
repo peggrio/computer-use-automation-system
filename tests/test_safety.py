@@ -12,7 +12,7 @@ from automation.browser import BrowserAdapter
 from automation.evidence import EvidenceWriter
 from automation.errors import UIError
 from automation.policy import DEFAULT_POLICY, SafetyPolicy
-from tools.ui_smoke import act, walkthrough
+from tools._ui import act, walkthrough
 from tools.validate_contracts import ROOT, load, validate
 
 CANARY = 'PRIVATE-CANARY-example.person@example.test-999-88-7777-secret-token'

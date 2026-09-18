@@ -15,6 +15,60 @@ from tools.replay import parser as replay_parser
 from tools.validate_contracts import ContractError
 
 
+async def run_simulation(args):
+    """Exercise intervention with browser controls acting as a labeled test operator."""
+    cap, profile, _ = load_registered(args.capability, args.version)
+    async with BrowserAdapter(
+        cap, profile, {'account_id': args.account, 'transaction_id': args.transaction},
+        base_url=args.target, evidence_root=args.evidence_root,
+        evidence_source='deterministic_replay', headless=not args.headed,
+    ) as adapter:
+        await adapter.login('john', 'demo')
+        runner = Replay(adapter, allow_pause=True)
+        handoff = Takeover(runner, source='test_harness')
+        await handoff.install()
+        original_page = adapter.page
+        original_session = adapter.session_id
+        adapter.evidence._write('takeover-fixture.json', {
+            'source': 'test_harness',
+            'scenario': 'ui_logout_then_simulated_operator_login_and_explicit_return',
+            'actual_human_participated': False,
+        })
+        try:
+            await adapter.page.get_by_role('link', name='Log Out', exact=True).click()
+            await adapter.page.locator('input[type="password"]').wait_for(state='visible')
+            paused = await runner.run(invocation_for(adapter))
+            await handoff.begin(paused)
+            await adapter.page.locator('input[name="username"]').fill('john')
+            await adapter.page.locator('input[name="password"]').fill('demo')
+            await adapter.page.get_by_role('button', name='Log In', exact=True).click()
+            await adapter.wait({'predicate': 'ready', 'target': 'overview'})
+            ticket = {key: handoff.ticket[key] for key in ('request_id', 'session_id', 'control_epoch')}
+            result = await handoff.resume(**ticket)
+            checks = {
+                'paused_before_manual_work': paused['status'] == 'paused',
+                'same_page': adapter.page is original_page,
+                'same_session': adapter.session_id == original_session,
+                'explicit_epoch_advanced': adapter.epoch > ticket['control_epoch'],
+                'completed': result['status'] == 'succeeded',
+                'correct_transaction': result.get('outputs', {}).get('transaction_id') == args.transaction,
+                'correct_amount': result.get('outputs', {}).get('amount') == '100.00',
+                'ownership_returned': adapter.owner == 'automation',
+            }
+            passed = all(checks.values())
+            adapter.evidence._write('takeover-acceptance.json', {
+                'source': 'test_harness', 'actual_human_participated': False,
+                'checks': checks, 'passed': passed, 'model_calls': 0,
+            })
+            print(json.dumps({
+                'passed': passed, 'evidence_directory': str(adapter.evidence.directory),
+                'actual_human_participated': False, 'model_calls': 0,
+            }))
+            return 0 if passed else 1
+        finally:
+            await handoff.close()
+
+
 async def read_command(timeout):
     """Cancelable terminal input: no blocked worker thread survives operator timeout."""
     loop=asyncio.get_running_loop()
@@ -30,6 +84,8 @@ async def read_command(timeout):
 
 
 async def main(args):
+    if args.simulate:
+        return await run_simulation(args)
     cap,profile,entry=load_registered(args.capability,args.version)
     check_registered_policy(entry,SafetyPolicy(args.target).config)
     async with BrowserAdapter(cap,profile,{'account_id':args.account,'transaction_id':args.transaction},
@@ -81,9 +137,11 @@ async def main(args):
 
 
 if __name__=='__main__':
-    p=replay_parser()
+    p=replay_parser(include_demo=False)
     p.description=__doc__
-    p.add_argument('--demo-expiry',action='store_true',help='Deliberately log out through the UI to demonstrate recovery')
+    p.add_argument('--demo', '--demo-expiry', dest='demo_expiry', action='store_true',
+                   help='Deliberately log out through the UI to demonstrate recovery')
+    p.add_argument('--simulate', action='store_true', help='Run the automated operator acceptance simulation')
     p.add_argument('--operator-timeout',type=int,default=300)
     try:
         raise SystemExit(asyncio.run(main(p.parse_args())))

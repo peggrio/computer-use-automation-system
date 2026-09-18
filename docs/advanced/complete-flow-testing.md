@@ -1,9 +1,9 @@
-# Complete-flow acceptance (Step 8)
+# Complete-flow acceptance
 
 Start the local ParaBank container (`docker compose up -d`) and install the project's Python dependencies and Playwright Chromium, as described in the README. Run:
 
 ```sh
-.venv/bin/python -m tools.acceptance
+.venv/bin/python -m tools.verify acceptance
 ```
 
 The command exits nonzero if any required check fails. It writes a private `report.json` and detailed browser evidence below a unique `runs/acceptance-…/` directory. Existing evidence and Git ignore rules are unchanged.

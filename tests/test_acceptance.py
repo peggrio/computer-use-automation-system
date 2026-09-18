@@ -6,7 +6,7 @@ import sys
 import tempfile
 import unittest
 
-from tools.check_evidence import scan
+from tools._evidence import scan
 from tools.validate_contracts import ROOT
 
 
@@ -46,7 +46,7 @@ class EvidenceTests(unittest.TestCase):
 
     def test_worker_blocks_model_and_external_connection(self):
         code = '''
-from tools.acceptance_worker import install_guard
+from tools._acceptance_worker import install_guard
 counts = install_guard()
 import socket
 for module in ('openai', 'automation.model', 'automation.discovery'):

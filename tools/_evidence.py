@@ -1,4 +1,4 @@
-"""Fail-closed JSON/JSONL evidence scan; never report a matched value."""
+"""Internal fail-closed evidence scanning helpers."""
 import json
 import re
 from datetime import datetime
@@ -13,6 +13,7 @@ def scan(root, secrets=()):
     root = Path(root)
     files = 0
     violations = 0
+
     def inspect(value):
         nonlocal violations
         if isinstance(value, dict):
@@ -20,29 +21,40 @@ def scan(root, secrets=()):
                 inspect(key)
                 inspect(item)
         elif isinstance(value, list):
-            for item in value: inspect(item)
+            for item in value:
+                inspect(item)
         elif isinstance(value, (str, int, float)) and not isinstance(value, bool):
             text = str(value)
-            if KEY.search(text) or any(s and s in text for s in (*PRIVATE, *secrets)):
+            if KEY.search(text) or any(secret and secret in text for secret in (*PRIVATE, *secrets)):
                 violations += 1
                 return
-            # Only actual ISO timestamps are exempt from numeric fixture matching.
             if re.fullmatch(r'\d{4}-\d\d-\d\dT[0-9:.]+(?:Z|[+-]\d\d:\d\d)', text):
                 try:
                     datetime.fromisoformat(text.replace('Z', '+00:00'))
                     return
-                except ValueError: pass
-            if text in {'john', 'demo'} or IDS.search(text): violations += 1
+                except ValueError:
+                    pass
+            if text in {'john', 'demo'} or IDS.search(text):
+                violations += 1
+
     for path in sorted(root.rglob('*')):
         if path.is_symlink():
             violations += 1
         elif path.is_file():
             files += 1
             try:
-                if path.suffix == '.json': inspect(json.loads(path.read_text()))
+                if path.suffix == '.json':
+                    inspect(json.loads(path.read_text()))
                 elif path.suffix == '.jsonl':
-                    for line in path.read_text().splitlines(): inspect(json.loads(line))
-                else: violations += 1
-            except (OSError, UnicodeError, ValueError): violations += 1
-    return {'passed': files > 0 and violations == 0, 'files_scanned': files,
-            'violations': violations, 'matched_values_reported': False}
+                    for line in path.read_text().splitlines():
+                        inspect(json.loads(line))
+                else:
+                    violations += 1
+            except (OSError, UnicodeError, ValueError):
+                violations += 1
+    return {
+        'passed': files > 0 and violations == 0,
+        'files_scanned': files,
+        'violations': violations,
+        'matched_values_reported': False,
+    }

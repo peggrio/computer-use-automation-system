@@ -1,4 +1,4 @@
-# Step 6: Deterministic replay
+# Deterministic replay
 
 ## What runs
 
@@ -93,8 +93,8 @@ Each replay run persists:
 The acceptance harness adds a labeled fixture and boolean assertions comparing transient outputs with synthetic expected values. It never saves the invocation, raw outputs, credentials or API key. Session expiry is triggered by UI logout; delay, HTTP 500 and download-control policy cases are explicitly labeled injections.
 
 ```sh
-.venv/bin/python -m tools.replay_demo --evidence-root runs
+.venv/bin/python -m tools.replay --demo --evidence-root runs
 .venv/bin/python -m unittest discover -s tests -v
 ```
 
-The retained [acceptance evidence](../evidence/replay/README.md) covers changed inputs, a second valid account, cross-account rejection, absent records, slow loading, session expiry, load failure and policy denial. Replay tests additionally cover stale pins/inputs, limits, cancellation, bounded wait retries, indeterminate actions, ownership transfer, output redaction and checkpoint failure after extraction.
+The retained [acceptance evidence](../../evidence/replay/README.md) covers changed inputs, a second valid account, cross-account rejection, absent records, slow loading, session expiry, load failure and policy denial. Replay tests additionally cover stale pins/inputs, limits, cancellation, bounded wait retries, indeterminate actions, ownership transfer, output redaction and checkpoint failure after extraction.

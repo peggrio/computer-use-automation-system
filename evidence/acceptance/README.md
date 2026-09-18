@@ -20,4 +20,4 @@ The retained run passed 103 regression tests, ten live replay scenarios, and sam
 
 `replay-event-*.json` contains checkpoints and actions; failure files retain structural DOM evidence without text/values. Takeover logs capture ownership transfer and redacted manual-action metadata. Fixtures are labeled test-harness actions, not naturally occurring incidents. Actual human participation is false.
 
-The scan covered 26 discovery files and 386 browser files, with zero known-secret violations. Scanner limits and isolation boundaries are described in [the testing guide](../../docs/complete-flow-testing.md). Reproduce with `.venv/bin/python -m tools.acceptance`.
+The scan covered 26 discovery files and 386 browser files, with zero known-secret violations. Scanner limits and isolation boundaries are described in [the testing guide](../../docs/advanced/complete-flow-testing.md). Reproduce with `.venv/bin/python -m tools.verify acceptance`.

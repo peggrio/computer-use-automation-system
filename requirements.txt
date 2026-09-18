@@ -1,0 +1,2 @@
+# Recommended complete local installation.
+-r requirements-discovery.txt

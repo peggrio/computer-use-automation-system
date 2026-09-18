@@ -1,4 +1,4 @@
-# Step 3: UI execution foundation
+# UI execution foundation
 
 ## What is implemented
 
@@ -63,7 +63,7 @@ docker compose up -d
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-ui.txt
 .venv/bin/python -m playwright install chromium
-.venv/bin/python -m tools.ui_smoke --headed
+.venv/bin/python -m tools._ui --headed
 ```
 
 The walkthrough uses the upstream public sample login by default. Optional `PARABANK_USERNAME` and `PARABANK_PASSWORD` environment variables can supply other synthetic sandbox accounts. Do not place credentials in capability artifacts. Login bootstrap also handles an already-authenticated session.
@@ -71,8 +71,8 @@ The walkthrough uses the upstream public sample login by default. Optional `PARA
 The default scenario selects account `12345`, verifies transaction `12145` belongs to it, searches for that ID, opens the result and extracts its details. To exercise different inputs:
 
 ```sh
-.venv/bin/python -m tools.ui_smoke --transaction 12256
-.venv/bin/python -m tools.ui_smoke --transaction 999999999
+.venv/bin/python -m tools._ui --transaction 12256
+.venv/bin/python -m tools._ui --transaction 999999999
 ```
 
 Only a safe status and output field names are printed. Extracted values remain in memory. The browser closes when the check ends; `--headed` lets you watch the actions but is not an operator handoff console.
@@ -88,4 +88,4 @@ The full suite includes real Chromium/ParaBank tests and needs Docker running. F
 
 The integration tests cover two successful transaction inputs, missing records/accounts, delayed and failed loads, bounded timeout, repeated/duplicated controls, stale/cross-session observations, malformed query keys, ownership epochs, explicit session expiry and a denied write-link substitution. Test-only DOM mutations and injected HTTP failures are limited to isolated local browser contexts and are not native ParaBank behavior. They do not modify the container's stored banking records.
 
-`tools/ui_smoke.py` is a fixed adapter test scenario, not the production artifact replay engine and not LLM discovery evidence. Full replay execution/result envelopes, LLM decisions and human takeover are later steps; persistence/redaction is now implemented in Step 4. Step 4 adds configurable action/network policy, per-hop redirect checks, popup/WebSocket blocking, structured logs and redacted failure snapshots. See [safety and evidence](safety-and-evidence.md) for its trust boundaries. Raw screenshots and traces remain disabled.
+`tools/_ui.py` is a fixed internal adapter test scenario, not the production artifact replay engine and not LLM discovery evidence. Full replay execution/result envelopes, LLM decisions and human intervention are separate layers. The safety layer adds configurable action/network policy, per-hop redirect checks, popup/WebSocket blocking, structured logs and redacted failure snapshots. See [safety and evidence](safety-and-evidence.md) for its trust boundaries. Raw screenshots and traces remain disabled.

@@ -10,6 +10,7 @@ from unittest.mock import AsyncMock
 from automation.browser import BrowserAdapter
 from automation.discovery import Discovery, Limits, compile_capability
 from automation.model import DiscoveryError, ModelReply, OpenAIModel, local_config
+from tools._evidence import scan
 from tools.validate_contracts import ROOT, load, validate
 
 
@@ -66,9 +67,8 @@ class DiscoveryTests(unittest.IsolatedAsyncioTestCase):
         self.assertEqual(actions,['fill','select'])
         self.assertNotIn('12345',json.dumps(cap))
         self.assertNotIn('12145',json.dumps(cap))
-        records=''.join(p.read_text() for p in self.adapter.evidence.directory.iterdir())
-        for secret in ('12345','12145','PRIVATE-CANARY','John Smith','300.00'):
-            self.assertNotIn(secret,records)
+        # Scan parsed values so random hashes and timestamp digits cannot cause false positives.
+        self.assertTrue(scan(self.adapter.evidence.directory)['passed'])
         for context in self.model.contexts:
             self.assertNotIn('steps',context)
             self.assertNotIn('PRIVATE-CANARY',json.dumps(context))

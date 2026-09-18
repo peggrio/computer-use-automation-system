@@ -1,10 +1,10 @@
-# Step 5: Genuine LLM discovery
+# LLM discovery
 
 ## Implemented scope
 
 The standalone discovery runner accepts the named goal `lookup_transaction`, a local ParaBank target origin, and typed runtime inputs. The goal catalog supplies a business objective, output definitions and safety/completion constraints. It does not supply a workflow sequence. Unsupported goals are rejected; arbitrary natural-language goal routing is not implemented.
 
-`gpt-5.4-mini` chooses each next operation using current browser facts. The existing surface profile supplies reviewed control bindings and readiness rules. This is workflow discovery over known application controls, not discovery of selectors or an arbitrary application's entire interface. The old scripted `tools.ui_smoke.walkthrough` is never called and the design example's action sequence is never sent to the model.
+`gpt-5.4-mini` chooses each next operation using current browser facts. The existing surface profile supplies reviewed control bindings and readiness rules. This is workflow discovery over known application controls, not discovery of selectors or an arbitrary application's entire interface. The internal scripted test walkthrough is never called and the design example's action sequence is never sent to the model.
 
 The browser adapter still loads the Step 2 design document as its reviewed typing/control contract. Only its declared output extraction mapping is reused as an operation; the discovery compiler builds a new action sequence from the successful execution trace. A separate `goals/lookup_transaction.json` holds the model's goal and constraints.
 
@@ -72,7 +72,7 @@ The compiler adds readiness waits and final extraction, so compiled steps can ou
 Verify a saved successful bundle offline, without model or browser calls:
 
 ```sh
-.venv/bin/python -m tools.verify_discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
+.venv/bin/python -m tools.verify discovery evidence/discovery/dbce8a9d535c40a4ba91a003792854ea
 ```
 
 The verifier checks contract/profile validity, hashes, request/response links, model receipts, decision/action correspondence, checkpoint continuity, token totals and recompilation equality. It does not re-execute the workflow or prove behavior with a second input.
