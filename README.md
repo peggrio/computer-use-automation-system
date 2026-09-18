@@ -1,3 +1,7 @@
+
+
+https://github.com/user-attachments/assets/89e50edc-f9b0-449f-8b29-294b3dd0c94a
+
 # Computer-Use Automation System
 
 This project demonstrates one design principle: let an LLM discover a browser workflow once, then replay the reviewed workflow without model decisions.
